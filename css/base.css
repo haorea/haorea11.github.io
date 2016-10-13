@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: transparent;
+
+}
+ul{
+    list-style: none;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
+.pull-right{
+    float: right !important;
+}
+.pull-left{
+    float: left !important;
+}
+input{
+    border:0;
+}
+.width-50{
+    width:50%;
+    display: block;
+}
+.border-left{
+    border-left: 1px solid #ccc;
+}
+.border-right{
+    border-right: 1px solid #ccc;
+}
+.border-top{
+    border-top: 1px solid #ccc;
+}
+.border-bottom{
+    border-bottom: 1px solid #ccc;
+}
+.width-33{
+    width:33.33%;
+}
+[class^="icon-"]{
+    background-image: url(../images/sprites.png);
+    -webkit-background-size: 200px 200px;
+    background-size: 200px 200px;
+}
+#footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    background: #fff;
+}
+#footer > ul{
+    width: 100%;
+}
+#footer > ul> li{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+#footer > ul> li> a{
+    display: inline-block;
+}
+#footer > ul> li> a > img{
+    width: 60px;
+}

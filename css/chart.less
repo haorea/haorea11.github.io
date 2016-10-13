@@ -1,0 +1,290 @@
+body{
+  min-width: 320px;
+}
+#header{
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+  >.topbar{
+    background: url(../images/header-bg.png) repeat-x;
+    height: 44px;
+    border-bottom: 1px solid #f0f0f0;
+    >.icon-back{
+      width: 40px;
+      height: 44px;
+      position: absolute;
+      background-position: -20px 0;
+      background-origin: content-box;
+      background-clip: content-box;
+      left: 0;
+      top: 0;
+      padding:12px 10px;
+
+    }
+    >h4{
+     text-align: center;
+      font-weight: normal;
+      line-height: 44px;
+      input{
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    }
+    >.icon-menu{
+      width: 40px;
+      height: 44px;
+      position: absolute;
+      background-position: -60px 0;
+      background-origin: content-box;
+      background-clip: content-box;
+      right: 0;
+      top: 0;
+      padding:12px 10px;
+    }
+  }
+  >.safetip{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    >p{
+      display: inline-block;
+      position: relative;
+      padding-left: 17px;
+      font-size: 14px;
+      &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/safe_icon.png);
+      
+        background-size: 18px 18px;
+      }
+    }
+  }
+}
+
+#shop{
+  padding-top:75px;
+  >.shop-title{
+    border-bottom: 1px solid #ccc;
+    >.shop-title-checkbox{
+      width: 40px;
+      float: left;
+      >.checkbox{}
+    }
+    >.shop-title-content{
+      overflow: hidden;
+      line-height: 30px;
+      >.pull-left{
+        >img{
+          width: 15px;
+          height: 13px;
+        }
+        >span{
+          font-size: 14px;
+        }
+      }
+      .pull-right{
+        font-size: 12px;
+        color: #d8505c;
+        margin-right: 10px;
+      }
+    }
+
+  }
+  >.shop-content{
+    >.product{
+      padding:10px 0;
+      border-bottom: 1px solid #ccc;
+      >.product-checkbox{
+        width: 40px;
+        float: left;
+        >.checkbox{
+        }
+      }
+      >.product-content{
+        overflow: hidden;
+        >.product-img{
+          width: 80px;
+          height: 80px;
+          float: left;
+          >img{
+            width: 100%;
+          }
+        }
+        >.product-info{
+          overflow: hidden;
+          padding: 0 10px;
+          >.product-name{
+            font-size: 14px;
+            height: 30px;
+            line-height: 15px;
+            overflow: hidden;
+            >a{}
+          }
+          >.product-price{
+            color: #d8505c;
+            font-size: 14px;
+          }
+          >.product-option{
+            >.pull-left{
+              text-align: center;
+              >span{
+                width: 32px;
+                height: 24px;
+                line-height: 24px;
+                float: left;
+                border: 1px solid #ccc;
+              }
+              >input{
+                width: 32px;
+                height: 24px;
+                line-height: 24px;
+                float: left;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+              }
+            }
+            >.pull-right{
+              >span:first-child{
+                width: 20px;
+                height: 5px;
+                display: block;
+                background-image: url(../images/delete_up.png);
+                -webkit-background-size: 20px 5px;
+                background-size: 20px 5px;
+                margin-left: -1px;
+              }
+              >span:last-child{
+                width: 18px;
+                height: 18px;
+                display: block;
+                background-image: url(../images/delete_down.png);
+                -webkit-background-size: 18px 18px;
+                background-size: 18px 18px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.checkbox{
+  width: 40px;
+  height: 34px;
+  padding: 7px 10px;
+  display: block;
+  background-image: url(../images/shop-icon.png);
+  -webkit-background-size: 50px 100px;
+  background-size: 50px 100px;
+  -webkit-background-origin: content-box;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.checkbox[checked]{
+  background-position: -25px 0;
+}
+
+#model{
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  display: none;
+  >.model-info{
+    background-color: #fff;
+    width: 80%;
+    min-height: 100px;
+    margin: 150px auto;
+    border-radius: 5px;
+    >.model-info-name{
+      width: 80%;
+      margin: 0 auto;
+      border-bottom: 1px solid #ccc;
+      >h4{
+        text-align: center;
+        line-height: 75px;
+        font-weight: normal;
+      }
+    }
+    >.model-info-option{
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px 0;
+      >.btn-cancel{
+        width: 40%;
+        height: 36px;
+        line-height: 36px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        float: left;
+        text-align: center;
+      }
+      >.btn-confirm{
+        width: 40%;
+        height: 36px;
+        line-height: 36px;
+        background-color: #d8505c;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        float: left;
+        color: #fff;
+        margin-left: 20%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+  animation-duration:2s;
+}
